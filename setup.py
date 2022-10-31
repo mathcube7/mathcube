@@ -20,11 +20,11 @@ setup(
     packages=find_packages(),
     package_dir={name: name},
     include_package_data=True,
-    license='None',
+    license='MIT',
     description=description,
     long_description=open('README.md').read() if exists('README.md') else '',
     long_description_content_type="text/markdown",
-    install_requires=['sympy', 'IPython'
+    install_requires=['sympy', 'IPython', 'matplotlib'
                       ],
     python_requires=">=3.6",
     classifiers=['Operating System :: OS Independent',
