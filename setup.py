@@ -8,7 +8,7 @@ email = 'mathcube7@gmail.com'
 description = 'Collection of useful Python tools'
 name = 'mathcube'
 year = '2022'
-url = ''
+url = 'https://github.com/mathcube7/mathcube'
 version = '0.0.1'
 
 setup(
