@@ -9,7 +9,7 @@ description = 'Collection of useful Python tools'
 name = 'mathcube'
 year = '2022'
 url = 'https://github.com/mathcube7/mathcube'
-version = '0.0.3'
+version = '0.1.0'
 
 setup(
     name=name,
