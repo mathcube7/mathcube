@@ -45,15 +45,25 @@ class HornerMethod:
         t.style[:, 0] = 'border-right: 1px solid #000;'
         self.table = t
         self._step_no = 0
+        self._completed = False
 
     def _repr_html_(self):
         return self.table._repr_html_()
+
+    def doit(self):
+        while not self._completed:
+            self.step()
+        return self
+
+    def row(self, idx):
+        return self.table[idx, :][1:]
 
     def step(self):
 
         t = self.table
         _, ncols = t.shape
         if self._step_no == 2 * ncols - 3:
+            self._completed = True
             return self
 
         def add_step():
